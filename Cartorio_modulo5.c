@@ -120,10 +120,10 @@ int main()
     char senhadigitada[10]="a";
     
     printf("###Cartorio da EBAC###\n\n");
-    printf("Login de administrador!\n\nDigite a sua senha: ");
+    printf("Login de administrador!\n\nDigite a sua Senha: ");
     scanf("%s",senhadigitada);
     
-    if(senhadigitada[10] == "admin")
+    if(senhadigitada[10] = "admin")
     {
 	
     
@@ -139,6 +139,7 @@ int main()
             printf("\t1 - Registrar nomes\n");
             printf("\t2 - consultar nomes\n");
             printf("\t3 - Deletar nomes\n\n");
+            printf("\t4 - sair do sistema\n\n");
 	        printf("opção:"); //fim do menu
     
             scanf("%d", &opcao); //armazenado a escolha do usuário
@@ -159,6 +160,11 @@ int main()
 			    case 3: 
 			    deletar(); //chamada de funções
 			    break;
+			    
+			    case 4:
+			    printf("Obrigado por ultilizar o sistema!\n");
+				return 0;
+				break;	
 		
 		        default:
 			    printf("Essa opcao nao esta disponivel!\n");
